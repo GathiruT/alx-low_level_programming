@@ -4,7 +4,6 @@
  *
  * @n: integer to print
  */
-
 void print_times_table(int n)
 {
 	int r, c, answer;
@@ -16,10 +15,8 @@ void print_times_table(int n)
 			for (c = 0; c <= n; c++)
 			{
 				answer = r * c;
-				if ( c == 0)
-				{
+				if (c == 0)
 					_putchar('0');
-				}
 				else if (answer < 10)
 				{
 					_putchar(',');
@@ -28,7 +25,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(answer % 10 + '0');
 				}
-				else if (answer >=10 && answer < 100)
+				else if (answer >= 10 && answer < 100)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -36,7 +33,7 @@ void print_times_table(int n)
 					_putchar((answer / 10) % 10 + '0');
 					_putchar(answer % 10 + '0');
 				}
-				else if (answer >= 100 && answer <1000)
+				else if (answer >= 100 && answer < 1000)
 				{
 					_putchar(',');
 					_putchar(' ');
