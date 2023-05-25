@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * main - prints fizz buzz for multiples of 5 and 3
+ *
+ * Return: always 0
+ */
 
 int main(void)
 {
