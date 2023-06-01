@@ -1,29 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* leet - encode a string with numbers
-* @c: array to encode
-*
-* Return: modified string
-*/
-
-char *leet(char *c)
+ * main - check the code for
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	int i, j;
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-	char *s = "aAeEoOtTlL";
-	char *k = "4433007711";
-
-	i = 0;
-	while (c[i] != '\0')
-	{
-		for (j = 0; j < 10; j++)
-		{
-			if (c[i] == s[j])
-				c[i] = k[j];
-		}
-		i++;
-	}
-
-	return (c);
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
+    return (0);
 }
