@@ -26,7 +26,7 @@ int helper(int i, int j)
 {
 	int square;
 
-	square = j *j;
+	square = j * j;
 	if (square == i)
 		return (j);
 
