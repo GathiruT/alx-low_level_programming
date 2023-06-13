@@ -29,10 +29,10 @@ char *str_concat(char *s1, char *s2)
 	str = malloc((i * sizeof(*s1)) + (j * sizeof(*s2) + 1));
 	if (str == NULL)
 		return (NULL);
-	else if (s1 == NULL)
-		return (s2);
-	else if (s2 == NULL)
+	else if (s2 == NULL && s1 != NULL)
 		return (s1);
+	else if (s1 == NULL && s2 != NULL)
+		return (s2);
 
 	k = i + j + 1;
 	for (len1 = 0, len = 0; len1 < k; len1++)
