@@ -30,8 +30,8 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 
-	len = i + j + 1;
-	for (len1 = 0, len2 = 0; len1 < k; len1++)
+	k = i + j + 1;
+	for (len1 = 0, len = 0; len1 < k; len1++)
 	{
 		if (len1 < i)
 			str[len1] = s1[len1];
