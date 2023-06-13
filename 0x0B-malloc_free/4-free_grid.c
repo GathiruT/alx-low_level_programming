@@ -6,7 +6,7 @@
  *
  * @grid: double pointer to the grid
  * @height: height of the grid
- * 
+ *
  * Return: void
  */
 void free_grid(int **grid, int height)
